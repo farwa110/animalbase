@@ -1,0 +1,84 @@
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(140 140 140);
+  font-family: "Arial", sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  width: 100%;
+  margin-top: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+caption {
+  caption-side: bottom;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+thead,
+tfoot {
+  background-color: rgb(228 240 245);
+}
+
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 12px 15px;
+  text-align: left;
+}
+
+/* Align last column center */
+td:last-of-type {
+  text-align: center;
+}
+
+/* Zebra Stripes */
+tbody > tr:nth-of-type(even) {
+  background-color: rgb(237 238 242);
+}
+
+tbody > tr:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+  cursor: pointer;
+}
+
+/* Sticky Header */
+thead {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+tfoot th {
+  text-align: right;
+}
+
+tfoot td {
+  font-weight: bold;
+}
+
+button {
+  background-color: gray;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgb(93, 91, 91);
+}
+
+button:focus {
+  outline: none;
+}
+
+button + button {
+  margin-left: 10px;
+}
